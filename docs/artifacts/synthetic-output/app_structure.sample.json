@@ -1,0 +1,62 @@
+{
+  "app": {
+    "name": "Community Operations App",
+    "startScreen": "DashboardScreen",
+    "onStart": "Set(varCurrentUser, User().Email); Navigate(DashboardScreen)",
+    "screenOrder": [
+      "DashboardScreen",
+      "ActivityListScreen",
+      "ActivityEditScreen",
+      "ContactListScreen"
+    ],
+    "screens": [
+      {
+        "id": "1",
+        "name": "DashboardScreen",
+        "type": "Screen",
+        "parentId": "",
+        "sourcePath": "Controls/1.json",
+        "keyProperties": {
+          "OnVisible": "Refresh(Activities)"
+        },
+        "events": [
+          {
+            "property": "OnVisible",
+            "formula": "Refresh(Activities)",
+            "summary": "Refresh(Activities)"
+          }
+        ],
+        "controls": []
+      },
+      {
+        "id": "2",
+        "name": "ActivityListScreen",
+        "type": "Screen",
+        "parentId": "",
+        "sourcePath": "Controls/2.json",
+        "keyProperties": {
+          "OnVisible": "ClearCollect(colUpcomingActivities, Filter(Activities, Status = \"Planned\"))"
+        },
+        "events": [
+          {
+            "property": "OnVisible",
+            "formula": "ClearCollect(colUpcomingActivities, Filter(Activities, Status = \"Planned\"))",
+            "summary": "ClearCollect upcoming activities from the Activities list"
+          }
+        ],
+        "controls": [
+          {
+            "id": "2a",
+            "name": "ActivitiesGallery",
+            "type": "Gallery",
+            "parentId": "ActivityListScreen",
+            "sourcePath": "Controls/2.json",
+            "keyProperties": {},
+            "events": [],
+            "controls": []
+          }
+        ]
+      }
+    ]
+  }
+}

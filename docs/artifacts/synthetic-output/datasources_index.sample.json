@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Activities",
+    "kind": "ConnectedDataSource",
+    "logicalTarget": "sharepoint://activities",
+    "fields": [],
+    "usedByScreens": ["ActivityListScreen", "ActivityEditScreen"],
+    "usedByFlows": ["ArchiveActivityFlow"]
+  },
+  {
+    "name": "Contacts",
+    "kind": "ConnectedDataSource",
+    "logicalTarget": "sharepoint://contacts",
+    "fields": [],
+    "usedByScreens": ["ContactListScreen"],
+    "usedByFlows": []
+  },
+  {
+    "name": "ArchiveActivityFlow",
+    "kind": "ConnectedFlow",
+    "logicalTarget": "flow://archive-activity",
+    "fields": [],
+    "usedByScreens": ["ActivityEditScreen"],
+    "usedByFlows": []
+  }
+]

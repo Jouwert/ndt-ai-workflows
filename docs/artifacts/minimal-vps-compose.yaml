@@ -1,0 +1,17 @@
+services:
+  transformer:
+    container_name: ndt-transformer
+    build:
+      context: ./app
+    working_dir: /app
+    env_file:
+      - ./env/transformer.env
+    volumes:
+      - ./app:/app
+      - ./config:/app/config
+      - ./data/mappings:/app/data/mappings
+      - ./data/state:/app/data/state
+      - ./data/logs:/app/data/logs
+      - ./data/tmp:/app/data/tmp
+    restart: "no"
+    command: ["python", "main.py", "--help"]

@@ -1,0 +1,28 @@
+Community Operations App — synthetic support context
+=================================================
+
+Start screen: DashboardScreen
+
+Screens
+- DashboardScreen
+- ActivityListScreen
+- ActivityEditScreen
+- ContactListScreen
+
+Data sources
+- Activities
+- Contacts
+- ArchiveActivityFlow
+
+Navigation highlights
+- DashboardButton -> ActivityListScreen
+- ContactButton -> ContactListScreen
+
+Dependency highlights
+- ActivityListScreen -> Activities
+- ActivityEditScreen -> ArchiveActivityFlow
+- ArchiveActivityFlow -> ActivityArchive
+
+Notes
+- This is a synthetic example that keeps the output shape of the real extractor.
+- Screen names, flow names, and targets are generic placeholders.

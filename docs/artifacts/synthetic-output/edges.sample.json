@@ -1,0 +1,18 @@
+{
+  "navigation": [
+    {"from": "DashboardButton", "to": "ActivityListScreen"},
+    {"from": "ContactButton", "to": "ContactListScreen"}
+  ],
+  "screenToDataSource": [
+    {"from": "ActivityListScreen", "to": "Activities"},
+    {"from": "ActivityEditScreen", "to": "Activities"},
+    {"from": "ContactListScreen", "to": "Contacts"}
+  ],
+  "screenToFlow": [
+    {"from": "ActivityEditScreen", "to": "ArchiveActivityFlow"}
+  ],
+  "flowToDataSource": [
+    {"from": "ArchiveActivityFlow", "to": "Activities"},
+    {"from": "ArchiveActivityFlow", "to": "ActivityArchive"}
+  ]
+}
