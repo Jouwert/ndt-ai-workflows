@@ -100,6 +100,12 @@ See [`docs/public-private-boundaries.md`](docs/public-private-boundaries.md).
 ## Current status
 This is currently a curated public documentation layer for the workflow, with a first set of sanitized technical artifacts derived from the real source projects.
 
+## Impact
+- Core staff now have a mobile-accessible source of truth for activities, volunteers, and clients, without exposing sensitive details to people who do not need access.
+- Support and iteration became much faster: bugs are typically resolved in under 10 minutes, and small workflow improvements can often be released within 30–60 minutes.
+- This reduces dependency on slow external change cycles and makes the Power App behave more like a live operational tool than a static system.
+- The bounded support architecture improves privacy while still allowing rapid diagnosis and release work.
+
 ## Next likely additions
 Likely next additions:
 - additional sanitized artifacts from the remaining candidate set
