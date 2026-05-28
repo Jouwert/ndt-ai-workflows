@@ -26,7 +26,6 @@ Summarises the transformation rules that keep sandbox data usable while reducing
 Summarises the layered access model behind the workflow, including browser access, app/API access, and the transformation path into the assistant-side sandbox.
 
 ### Synthetic bot chat visual
-- [`artifacts/synthetic-bot-chat-visual.md`](artifacts/synthetic-bot-chat-visual.md)
 - [`../assets/images/generated/ndt-assistant-demo-chat.png`](../assets/images/generated/ndt-assistant-demo-chat.png)
 
 Shows the chat-shaped interaction surface of the assistant in a synthetic Telegram-like screenshot built for public documentation.

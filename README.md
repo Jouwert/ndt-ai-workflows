@@ -77,7 +77,6 @@ ndt-ai-workflows/
         ├── minimal-vps-compose.yaml
         ├── minimal-vps-deployment-snippet.md
         ├── pseudonymisation-summary.md
-        ├── synthetic-bot-chat-visual.md
         ├── synthetic-power-app-output-example.md
         └── synthetic-output/
             ├── app_structure.sample.json
