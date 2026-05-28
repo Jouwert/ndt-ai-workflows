@@ -68,7 +68,6 @@ ndt-ai-workflows/
 ├── README.md
 └── docs/
     ├── architecture-overview.md
-    ├── candidates-sanitized-technical-artifacts.md
     ├── deployment-decisions.md
     ├── public-private-boundaries.md
     ├── sanitized-technical-artifacts.md
