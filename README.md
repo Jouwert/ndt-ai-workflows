@@ -60,6 +60,11 @@ The working goal is:
 
 This is being approached as a **privacy-first** workflow with bounded assistant access rather than a direct free-form agent on production data.
 
+Current stack in this case:
+- **OpenClaw** for the assistant layer
+- **Hermes** for Power App support and troubleshooting
+- a **pseudonymisation pipeline** between production data and the assistant-side sandbox
+
 See [`docs/field-notes-financial-workflow.md`](docs/field-notes-financial-workflow.md).
 
 ## Repository scope

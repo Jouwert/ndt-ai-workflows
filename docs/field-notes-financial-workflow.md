@@ -48,6 +48,11 @@ The interesting part is finding which path remains understandable, privacy-aware
 
 That gap between "this should work in theory" and "this works repeatedly in production" is where most of the engineering judgment lives.
 
+## Related public docs
+- [`architecture-overview.md`](architecture-overview.md)
+- [`deployment-decisions.md`](deployment-decisions.md)
+- [`artifacts/access-model-summary.md`](artifacts/access-model-summary.md)
+
 ## Public boundary reminder
 This repository documents the workflow shape and the lessons learned.
 It does not publish raw organisational data, live secrets, or private approval records.
