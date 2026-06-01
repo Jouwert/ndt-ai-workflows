@@ -52,13 +52,14 @@
   <path d="M 230 290 L 340 290" class="flow" stroke="#22d3ee" marker-end="url(#arrow-cyan)"/>
   <path d="M 540 290 L 670 290" class="flow" stroke="#22d3ee" marker-end="url(#arrow-cyan)"/>
   <path d="M 870 290 L 1000 290" class="flow" stroke="#22d3ee" marker-end="url(#arrow-cyan)"/>
-  <path d="M 1200 350 L 1200 420 L 360 420 L 360 520" class="flow" stroke="#34d399" marker-end="url(#arrow-emerald)"/>
-  <path d="M 540 610 L 670 610" class="flow" stroke="#34d399" marker-end="url(#arrow-emerald)"/>
-  <path d="M 870 610 L 1000 610" class="flow" stroke="#34d399" marker-end="url(#arrow-emerald)"/>
-  <path d="M 1210 610 L 1210 690" class="flow" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
-  <path d="M 1240 730 L 1240 838 L 1370 838 L 1370 780" class="flow" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
+  <path d="M 1200 350 L 1200 420 L 300 420 L 300 560" class="flow" stroke="#34d399" marker-end="url(#arrow-emerald)"/>
+  <path d="M 430 610 L 480 610" class="flow" stroke="#34d399" marker-end="url(#arrow-emerald)"/>
+  <path d="M 700 610 L 750 610" class="flow" stroke="#34d399" marker-end="url(#arrow-emerald)"/>
+  <path d="M 1000 610 L 1160 610 L 1160 735" class="flow dashed" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
+  <path d="M 1300 660 L 1300 690" class="flow" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
+  <path d="M 1300 790 L 1300 838 L 1345 838 L 1345 820" class="flow" stroke="#34d399" marker-end="url(#arrow-emerald)"/>
   <path d="M 360 250 L 360 198 L 1180 198 L 1180 250" class="flow dashed" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
-  <path d="M 1180 430 L 1180 520" class="flow dashed" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
+  <path d="M 1180 430 L 1180 560" class="flow dashed" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
 
   <rect x="110" y="240" width="120" height="100" class="box-bg" rx="12"/>
   <rect x="110" y="240" width="120" height="100" class="box" fill="rgba(30, 41, 59, 0.58)" stroke="#94a3b8" rx="12"/>
@@ -88,42 +89,42 @@
   <text x="1022" y="320" class="tiny">deterministic pull of</text>
   <text x="1022" y="336" class="tiny">relevant structured context</text>
 
-  <rect x="280" y="560" width="260" height="100" class="box-bg" rx="12"/>
-  <rect x="280" y="560" width="260" height="100" class="box" fill="rgba(6, 78, 59, 0.45)" stroke="#34d399" rx="12"/>
-  <text x="302" y="595" class="label">Structured transformer</text>
-  <text x="302" y="620" class="small">normalize request + context</text>
-  <text x="302" y="640" class="tiny">extract fields, joins, and checks</text>
+  <rect x="170" y="560" width="260" height="100" class="box-bg" rx="12"/>
+  <rect x="170" y="560" width="260" height="100" class="box" fill="rgba(6, 78, 59, 0.45)" stroke="#34d399" rx="12"/>
+  <text x="192" y="595" class="label">Structured transformer</text>
+  <text x="192" y="620" class="small">normalize request + context</text>
+  <text x="192" y="640" class="tiny">extract fields, joins, and checks</text>
 
-  <rect x="670" y="560" width="200" height="100" class="box-bg" rx="12"/>
-  <rect x="670" y="560" width="200" height="100" class="box" fill="rgba(76, 29, 149, 0.45)" stroke="#a78bfa" rx="12"/>
-  <text x="692" y="595" class="label">Masked view</text>
-  <text x="692" y="620" class="small">pseudonymised where needed</text>
-  <text x="692" y="640" class="tiny">safer assistant-side context</text>
+  <rect x="480" y="560" width="220" height="100" class="box-bg" rx="12"/>
+  <rect x="480" y="560" width="220" height="100" class="box" fill="rgba(76, 29, 149, 0.45)" stroke="#a78bfa" rx="12"/>
+  <text x="502" y="595" class="label">Masked view</text>
+  <text x="502" y="620" class="small">pseudonymised where needed</text>
+  <text x="502" y="640" class="tiny">safer assistant-side context</text>
 
-  <rect x="1000" y="560" width="250" height="100" class="box-bg" rx="12"/>
-  <rect x="1000" y="560" width="250" height="100" class="box" fill="rgba(8, 51, 68, 0.45)" stroke="#22d3ee" rx="12"/>
-  <text x="1022" y="595" class="label">OpenClaw assistant</text>
-  <text x="1022" y="620" class="small">proposal generation</text>
-  <text x="1022" y="640" class="tiny">draft reimbursement item,</text>
-  <text x="1022" y="656" class="tiny">never final approval</text>
+  <rect x="750" y="560" width="250" height="100" class="box-bg" rx="12"/>
+  <rect x="750" y="560" width="250" height="100" class="box" fill="rgba(8, 51, 68, 0.45)" stroke="#22d3ee" rx="12"/>
+  <text x="772" y="595" class="label">OpenClaw assistant</text>
+  <text x="772" y="620" class="small">proposal generation</text>
+  <text x="772" y="640" class="tiny">draft reimbursement item,</text>
+  <text x="772" y="656" class="tiny">never final approval</text>
 
-  <rect x="1110" y="560" width="200" height="100" class="box-bg" rx="12"/>
-  <rect x="1110" y="560" width="200" height="100" class="box" fill="rgba(136, 19, 55, 0.45)" stroke="#fb7185" rx="12"/>
-  <text x="1132" y="595" class="label">Hermes support</text>
-  <text x="1132" y="620" class="small">Power App + flow diagnostics</text>
-  <text x="1132" y="640" class="tiny">inspection, troubleshooting, docs</text>
+  <rect x="1170" y="560" width="260" height="100" class="box-bg" rx="12"/>
+  <rect x="1170" y="560" width="260" height="100" class="box" fill="rgba(136, 19, 55, 0.45)" stroke="#fb7185" rx="12"/>
+  <text x="1192" y="595" class="label">Hermes support</text>
+  <text x="1192" y="620" class="small">Power App + flow diagnostics</text>
+  <text x="1192" y="640" class="tiny">inspection, troubleshooting, docs</text>
 
-  <rect x="1110" y="690" width="260" height="100" class="box-bg" rx="12"/>
-  <rect x="1110" y="690" width="260" height="100" class="box" fill="rgba(136, 19, 55, 0.45)" stroke="#fb7185" rx="12"/>
-  <text x="1132" y="725" class="label">Human approval gate</text>
-  <text x="1132" y="750" class="small">reviewer / finance / board</text>
-  <text x="1132" y="770" class="tiny">legal and audit decision point</text>
+  <rect x="1160" y="690" width="280" height="100" class="box-bg" rx="12"/>
+  <rect x="1160" y="690" width="280" height="100" class="box" fill="rgba(136, 19, 55, 0.45)" stroke="#fb7185" rx="12"/>
+  <text x="1182" y="725" class="label">Human approval gate</text>
+  <text x="1182" y="750" class="small">reviewer / finance / board</text>
+  <text x="1182" y="770" class="tiny">legal and audit decision point</text>
 
-  <rect x="1250" y="820" width="240" height="90" class="box-bg" rx="12"/>
-  <rect x="1250" y="820" width="240" height="90" class="box" fill="rgba(6, 78, 59, 0.45)" stroke="#34d399" rx="12"/>
-  <text x="1272" y="855" class="label">Operational write path</text>
-  <text x="1272" y="880" class="small">approved record back into</text>
-  <text x="1272" y="896" class="tiny">Power App / SharePoint workflow</text>
+  <rect x="1220" y="820" width="250" height="90" class="box-bg" rx="12"/>
+  <rect x="1220" y="820" width="250" height="90" class="box" fill="rgba(6, 78, 59, 0.45)" stroke="#34d399" rx="12"/>
+  <text x="1242" y="855" class="label">Operational write path</text>
+  <text x="1242" y="880" class="small">approved record back into</text>
+  <text x="1242" y="896" class="tiny">Power App / SharePoint workflow</text>
 
   <rect x="70" y="838" width="1080" height="90" rx="14" fill="rgba(15, 23, 42, 0.92)" stroke="#334155" stroke-width="2"/>
   <text x="95" y="872" class="label">Key idea</text>
