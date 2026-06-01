@@ -52,6 +52,7 @@ That gap between "this should work in theory" and "this works repeatedly in prod
 - [`architecture-overview.md`](architecture-overview.md)
 - [`deployment-decisions.md`](deployment-decisions.md)
 - [`artifacts/access-model-summary.md`](artifacts/access-model-summary.md)
+- [`../assets/images/generated/reimbursement-workflow-architecture.svg`](../assets/images/generated/reimbursement-workflow-architecture.svg)
 
 ## Public boundary reminder
 This repository documents the workflow shape and the lessons learned.

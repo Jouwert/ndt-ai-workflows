@@ -1,0 +1,140 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow-cyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#22d3ee"/>
+    </marker>
+    <marker id="arrow-emerald" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#34d399"/>
+    </marker>
+    <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#fb7185"/>
+    </marker>
+    <style>
+      .title { font: 700 34px 'JetBrains Mono', 'DejaVu Sans Mono', monospace; fill: #e2e8f0; }
+      .subtitle { font: 400 16px 'JetBrains Mono', 'DejaVu Sans Mono', monospace; fill: #94a3b8; }
+      .section { font: 700 18px 'JetBrains Mono', 'DejaVu Sans Mono', monospace; fill: #f8fafc; }
+      .label { font: 700 17px 'JetBrains Mono', 'DejaVu Sans Mono', monospace; fill: #e2e8f0; }
+      .small { font: 400 13px 'JetBrains Mono', 'DejaVu Sans Mono', monospace; fill: #cbd5e1; }
+      .tiny { font: 400 12px 'JetBrains Mono', 'DejaVu Sans Mono', monospace; fill: #94a3b8; }
+      .legend { font: 400 12px 'JetBrains Mono', 'DejaVu Sans Mono', monospace; fill: #cbd5e1; }
+      .boundary { fill: rgba(15, 23, 42, 0.55); stroke-width: 2; stroke-dasharray: 10 8; rx: 18; }
+      .box-bg { fill: #0f172a; }
+      .box { stroke-width: 2; rx: 12; filter: url(#shadow); }
+      .flow { stroke-width: 4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .dashed { stroke-dasharray: 8 8; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="980" fill="#020617"/>
+  <rect width="1600" height="980" fill="url(#grid)" opacity="0.7"/>
+
+  <text x="80" y="78" class="title">Reimbursement workflow architecture</text>
+  <text x="80" y="112" class="subtitle">Public, sanitized view of a privacy-aware reimbursement / volunteer compensation flow around Microsoft 365, SharePoint, Power Apps, OpenClaw, and Hermes.</text>
+
+  <rect x="70" y="150" width="1460" height="300" class="boundary" stroke="#fbbf24"/>
+  <text x="92" y="180" class="section">Operational layer — Microsoft 365 / SharePoint / Power App</text>
+  <text x="92" y="202" class="tiny">Live organisational records remain the source of truth.</text>
+
+  <rect x="70" y="490" width="980" height="290" class="boundary" stroke="#34d399"/>
+  <text x="92" y="520" class="section">Transformation + bounded assistant layer</text>
+  <text x="92" y="542" class="tiny">Structured extraction, masking where needed, assistant proposes — human decides.</text>
+
+  <rect x="1080" y="490" width="450" height="290" class="boundary" stroke="#fb7185"/>
+  <text x="1102" y="520" class="section">Support + governance layer</text>
+  <text x="1102" y="542" class="tiny">Troubleshooting, auditability, and approval stay visible.</text>
+
+  <path d="M 230 290 L 340 290" class="flow" stroke="#22d3ee" marker-end="url(#arrow-cyan)"/>
+  <path d="M 540 290 L 670 290" class="flow" stroke="#22d3ee" marker-end="url(#arrow-cyan)"/>
+  <path d="M 870 290 L 1000 290" class="flow" stroke="#22d3ee" marker-end="url(#arrow-cyan)"/>
+  <path d="M 1200 350 L 1200 420 L 360 420 L 360 520" class="flow" stroke="#34d399" marker-end="url(#arrow-emerald)"/>
+  <path d="M 540 610 L 670 610" class="flow" stroke="#34d399" marker-end="url(#arrow-emerald)"/>
+  <path d="M 870 610 L 1000 610" class="flow" stroke="#34d399" marker-end="url(#arrow-emerald)"/>
+  <path d="M 1210 610 L 1210 690" class="flow" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
+  <path d="M 1240 730 L 1240 838 L 1370 838 L 1370 780" class="flow" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
+  <path d="M 360 250 L 360 198 L 1180 198 L 1180 250" class="flow dashed" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
+  <path d="M 1180 430 L 1180 520" class="flow dashed" stroke="#fb7185" marker-end="url(#arrow-rose)"/>
+
+  <rect x="110" y="240" width="120" height="100" class="box-bg" rx="12"/>
+  <rect x="110" y="240" width="120" height="100" class="box" fill="rgba(30, 41, 59, 0.58)" stroke="#94a3b8" rx="12"/>
+  <text x="128" y="275" class="label">Requester</text>
+  <text x="128" y="300" class="small">Volunteer / staff</text>
+  <text x="128" y="320" class="tiny">natural-language</text>
+  <text x="128" y="336" class="tiny">reimbursement request</text>
+
+  <rect x="340" y="240" width="200" height="100" class="box-bg" rx="12"/>
+  <rect x="340" y="240" width="200" height="100" class="box" fill="rgba(8, 51, 68, 0.45)" stroke="#22d3ee" rx="12"/>
+  <text x="362" y="275" class="label">Power App intake</text>
+  <text x="362" y="300" class="small">request capture</text>
+  <text x="362" y="320" class="tiny">mobile-friendly entry</text>
+  <text x="362" y="336" class="tiny">proxy submission possible</text>
+
+  <rect x="670" y="240" width="200" height="100" class="box-bg" rx="12"/>
+  <rect x="670" y="240" width="200" height="100" class="box" fill="rgba(76, 29, 149, 0.45)" stroke="#a78bfa" rx="12"/>
+  <text x="692" y="275" class="label">SharePoint context</text>
+  <text x="692" y="300" class="small">lists and metadata</text>
+  <text x="692" y="320" class="tiny">volunteer / activity /</text>
+  <text x="692" y="336" class="tiny">finance references</text>
+
+  <rect x="1000" y="240" width="250" height="100" class="box-bg" rx="12"/>
+  <rect x="1000" y="240" width="250" height="100" class="box" fill="rgba(6, 78, 59, 0.45)" stroke="#34d399" rx="12"/>
+  <text x="1022" y="275" class="label">Supported access path</text>
+  <text x="1022" y="300" class="small">Graph / extractor</text>
+  <text x="1022" y="320" class="tiny">deterministic pull of</text>
+  <text x="1022" y="336" class="tiny">relevant structured context</text>
+
+  <rect x="280" y="560" width="260" height="100" class="box-bg" rx="12"/>
+  <rect x="280" y="560" width="260" height="100" class="box" fill="rgba(6, 78, 59, 0.45)" stroke="#34d399" rx="12"/>
+  <text x="302" y="595" class="label">Structured transformer</text>
+  <text x="302" y="620" class="small">normalize request + context</text>
+  <text x="302" y="640" class="tiny">extract fields, joins, and checks</text>
+
+  <rect x="670" y="560" width="200" height="100" class="box-bg" rx="12"/>
+  <rect x="670" y="560" width="200" height="100" class="box" fill="rgba(76, 29, 149, 0.45)" stroke="#a78bfa" rx="12"/>
+  <text x="692" y="595" class="label">Masked view</text>
+  <text x="692" y="620" class="small">pseudonymised where needed</text>
+  <text x="692" y="640" class="tiny">safer assistant-side context</text>
+
+  <rect x="1000" y="560" width="250" height="100" class="box-bg" rx="12"/>
+  <rect x="1000" y="560" width="250" height="100" class="box" fill="rgba(8, 51, 68, 0.45)" stroke="#22d3ee" rx="12"/>
+  <text x="1022" y="595" class="label">OpenClaw assistant</text>
+  <text x="1022" y="620" class="small">proposal generation</text>
+  <text x="1022" y="640" class="tiny">draft reimbursement item,</text>
+  <text x="1022" y="656" class="tiny">never final approval</text>
+
+  <rect x="1110" y="560" width="200" height="100" class="box-bg" rx="12"/>
+  <rect x="1110" y="560" width="200" height="100" class="box" fill="rgba(136, 19, 55, 0.45)" stroke="#fb7185" rx="12"/>
+  <text x="1132" y="595" class="label">Hermes support</text>
+  <text x="1132" y="620" class="small">Power App + flow diagnostics</text>
+  <text x="1132" y="640" class="tiny">inspection, troubleshooting, docs</text>
+
+  <rect x="1110" y="690" width="260" height="100" class="box-bg" rx="12"/>
+  <rect x="1110" y="690" width="260" height="100" class="box" fill="rgba(136, 19, 55, 0.45)" stroke="#fb7185" rx="12"/>
+  <text x="1132" y="725" class="label">Human approval gate</text>
+  <text x="1132" y="750" class="small">reviewer / finance / board</text>
+  <text x="1132" y="770" class="tiny">legal and audit decision point</text>
+
+  <rect x="1250" y="820" width="240" height="90" class="box-bg" rx="12"/>
+  <rect x="1250" y="820" width="240" height="90" class="box" fill="rgba(6, 78, 59, 0.45)" stroke="#34d399" rx="12"/>
+  <text x="1272" y="855" class="label">Operational write path</text>
+  <text x="1272" y="880" class="small">approved record back into</text>
+  <text x="1272" y="896" class="tiny">Power App / SharePoint workflow</text>
+
+  <rect x="70" y="838" width="1080" height="90" rx="14" fill="rgba(15, 23, 42, 0.92)" stroke="#334155" stroke-width="2"/>
+  <text x="95" y="872" class="label">Key idea</text>
+  <text x="95" y="898" class="small">The assistant helps structure a reimbursement proposal from supported Microsoft context, but approval stays human and the live operational system remains authoritative.</text>
+
+  <circle cx="95" cy="947" r="7" fill="#22d3ee"/>
+  <text x="110" y="952" class="legend">cyan = user-facing / assistant-facing components</text>
+  <circle cx="465" cy="947" r="7" fill="#34d399"/>
+  <text x="480" y="952" class="legend">green = extraction / transformation / operational write path</text>
+  <circle cx="950" cy="947" r="7" fill="#a78bfa"/>
+  <text x="965" y="952" class="legend">violet = structured or masked data views</text>
+  <circle cx="1305" cy="947" r="7" fill="#fb7185"/>
+  <text x="1320" y="952" class="legend">rose = governance, troubleshooting, approval</text>
+</svg>

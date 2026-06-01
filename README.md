@@ -132,5 +132,7 @@ The most recent public direction documented here is a finance-workflow case wher
 
 ## Next likely additions
 Likely next additions:
-- one concise diagram if it improves clarity
 - one or two more public notes from the same finance-workflow line of work
+
+A first reimbursement-oriented public diagram is now included here:
+- [`assets/images/generated/reimbursement-workflow-architecture.svg`](assets/images/generated/reimbursement-workflow-architecture.svg)
