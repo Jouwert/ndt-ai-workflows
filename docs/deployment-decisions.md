@@ -60,6 +60,31 @@ The Power App remains a real operational component in the workflow rather than d
 
 This keeps the workflow grounded in actual organisational tooling instead of turning everything into one generic assistant product.
 
+## Native canvas-level agent integration is not currently treated as a production path
+In this project, direct MCP-style integration into the Power App canvas has not yet been reliable enough to treat as the main production path.
+
+That does not mean the idea is permanently impossible.
+It means the documented workflow should not pretend that a fragile path is production-ready when repeated real-world work says otherwise.
+
+## Browser automation remains a support tool, not the foundation
+Browser-driven access remains useful for:
+- inspection
+- troubleshooting
+- visual checks
+
+But it is still weaker than a deterministic structured access path for repeated operational use.
+
+In this case, browser control has been too flaky and too token-heavy to act as the primary integration layer.
+
+## Deterministic extraction and transformation is the preferred path
+The most reliable path so far is to:
+- extract app and data context through supported Microsoft interfaces;
+- transform it into a structured working representation;
+- pseudonymise where needed before assistant-side use;
+- keep human approval in the final operational flow.
+
+This is slower to build than a direct agent-on-canvas dream, but more stable and more defensible.
+
 ## The assistant runs in a self-hosted VPS setup
 The OpenClaw assistant runs in a self-hosted VPS context.
 
@@ -74,9 +99,11 @@ It supports:
 The deployment documented in this workflow has a clear shape:
 - Microsoft 365, SharePoint, and the Power App form the operational environment;
 - the OpenClaw assistant adds bounded AI support around that environment;
-- the Hermes support workflow improves maintenance, troubleshooting, and documentation.
+- the Hermes support workflow improves maintenance, troubleshooting, and documentation;
+- Graph-backed extraction and transformation currently provide the most reliable bridge between the operational system and the assistant-side workflow.
 
 ## Related documents
 - [`README.md`](../README.md)
 - [`architecture-overview.md`](architecture-overview.md)
 - [`public-private-boundaries.md`](public-private-boundaries.md)
+- [`field-notes-financial-workflow.md`](field-notes-financial-workflow.md)

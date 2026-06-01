@@ -22,6 +22,8 @@ In practice, SharePoint held structured information such as:
 
 The Power App sat on top of that environment and supported operational entry and management of activities and related workflow data.
 
+The newer workflow line documented here extends that environment into an AI-assisted finance-request path where natural-language requests can be turned into structured proposals for later human approval.
+
 ## Architecture
 The workflow consists of three layers: **operational data management**, **bounded assistant access**, and **support/documentation tooling**.
 
@@ -62,6 +64,18 @@ This layer was less about direct end-user assistance and more about:
 - making future troubleshooting and changes safer;
 - supporting real support questions and feature work from an existing baseline.
 
+In the finance-workflow case, this support layer also became the place where the practical integration strategy was tested:
+- direct canvas-level agent integration looked attractive but did not prove stable enough;
+- browser-driven control stayed useful for inspection, not as the main production path;
+- deterministic extraction and transformation of app context proved much more reliable.
+
+## Current practical pattern
+The most credible current pattern in this project is:
+- production SharePoint and Power App stay the operational source of truth;
+- structured context is extracted through supported Microsoft access paths;
+- sensitive context is transformed or pseudonymised before assistant-side use where needed;
+- the assistant works from the structured representation;
+- a human approval step remains in the write path.
 
 ## Layer summary
 
@@ -126,6 +140,7 @@ This repository documents:
 - the role of SharePoint and Power Apps in the workflow;
 - the bounded assistant design;
 - the support/documentation role of the Hermes project;
+- the shift toward deterministic context extraction as the most reliable integration path so far;
 - the deployment and privacy decisions that shaped the setup.
 
 This repository does not publish:

@@ -1,6 +1,6 @@
 # ndt-ai-workflows
 
-Documentation for an AI-supported workflow around **Nu De Toekomst**'s Microsoft 365 environment.
+Documentation for a privacy-aware AI-supported workflow around **Nu De Toekomst**'s Microsoft 365 environment.
 
 ## What is in scope
 This repository brings together three related parts of the workflow:
@@ -49,6 +49,19 @@ Topics:
 - Power App dependencies;
 - governance and access boundaries.
 
+## Recent development snapshot
+One current line of work in this project is an **AI-assisted financial workflow** for a non-profit running on Microsoft 365, SharePoint, and Power Apps.
+
+The working goal is:
+- let staff and volunteers submit finance requests in natural language;
+- pull the relevant structured SharePoint context;
+- construct a proposed request or list-item shape for review;
+- keep human approval in the final loop.
+
+This is being approached as a **privacy-first** workflow with bounded assistant access rather than a direct free-form agent on production data.
+
+See [`docs/field-notes-financial-workflow.md`](docs/field-notes-financial-workflow.md).
+
 ## Repository scope
 This repository focuses on:
 - workflow structure;
@@ -69,6 +82,7 @@ ndt-ai-workflows/
 └── docs/
     ├── architecture-overview.md
     ├── deployment-decisions.md
+    ├── field-notes-financial-workflow.md
     ├── public-private-boundaries.md
     ├── sanitized-technical-artifacts.md
     └── artifacts/
@@ -98,13 +112,20 @@ See [`docs/public-private-boundaries.md`](docs/public-private-boundaries.md).
 ## Current status
 This is currently a curated public documentation layer for the workflow, with a first set of sanitized technical artifacts derived from the real source projects.
 
+The most recent public direction documented here is a finance-workflow case where deterministic context extraction and pseudonymisation have proved more reliable than direct browser-driven or canvas-level agent integration.
+
 ## Impact
 - Core staff now have a mobile-accessible source of truth for activities, volunteers, and clients, without exposing sensitive details to people who do not need access.
 - Support and iteration became much faster: bugs are typically resolved in under 10 minutes, and small workflow improvements can often be released within 30–60 minutes.
 - This reduces dependency on slow external change cycles and makes the Power App behave more like a live operational tool than a static system.
 - The bounded support architecture improves privacy while still allowing rapid diagnosis and release work.
 
+## What we learned so far
+- Direct MCP-style integration into the Power App canvas has not yet proved reliable enough in this project.
+- Browser-based control remains useful for inspection and troubleshooting, but too flaky and token-heavy as the main production path.
+- The most reliable pattern so far is deterministic extraction of app and SharePoint context, structured transformation, and pseudonymisation before assistant-side use.
+
 ## Next likely additions
 Likely next additions:
-- additional sanitized artifacts from the remaining candidate set
-- one simple access or hosting diagram if it improves clarity
+- one concise diagram if it improves clarity
+- one or two more public notes from the same finance-workflow line of work

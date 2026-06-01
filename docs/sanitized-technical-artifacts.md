@@ -2,6 +2,9 @@
 
 This repository includes a small set of sanitized technical artifacts derived from the real NDT source projects.
 
+For the recent finance-workflow line of work, see also the public field note:
+- [`field-notes-financial-workflow.md`](field-notes-financial-workflow.md)
+
 ## Implemented artifacts
 
 ### Extractor walkthrough
