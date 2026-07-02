@@ -67,6 +67,17 @@ Current stack in this case:
 
 See [`docs/field-notes-financial-workflow.md`](docs/field-notes-financial-workflow.md).
 
+## Relationship to the private NDT project cluster
+This repository is the **public/sanitized documentation layer** for a wider private NDT project cluster.
+
+It is derived from operational work around:
+- the private Power App / finance support project;
+- the private Hermes volunteer-intake AI/runtime project;
+- legacy OpenClaw/Teddie assistant material;
+- the surrounding Microsoft 365 / SharePoint environment.
+
+This repo is **not** the operational source of truth. Keep private paths, raw SharePoint data, internal app exports, secrets, tokens, private endpoints, runtime databases, and sensitive logs out of this repository.
+
 ## Repository scope
 This repository focuses on:
 - workflow structure;
